@@ -1,0 +1,31 @@
+<div id="expense_list">
+<h1>Listing expenses</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Note</th>
+    <th>Amount</th>
+    <th>Time</th>
+    <th></th>
+  </tr>
+
+<% @expenses.each do |expense| %>
+  <tr class="<% cycle('list_line_odd', 'list_line_even') %>">
+    <td><%= expense.name %></td>
+    <td><%= expense.note %></td>
+    <td><%= expense.amount %></td>
+    <td><%= expense.time %></td>
+    <td class="list_actions">
+    <%= link_to 'Show', expense %><br/>
+    <%= link_to 'Edit', edit_expense_path(expense) %><br/>
+    <%= link_to 'Destroy', expense, :confirm => 'Are you sure?', :method => :delete %><br/>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<br />
+
+<%= link_to 'New Expense', new_expense_path %>
+

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  note: MyText
+  amount: 9.99
+  time: 2011-06-10 09:36:59
+
+two:
+  name: MyString
+  note: MyText
+  amount: 9.99
+  time: 2011-06-10 09:36:59
