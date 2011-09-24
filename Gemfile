@@ -9,6 +9,7 @@ gem 'nifty-generators'
 
 gem 'sqlite3'
 gem 'mysql2'
+gem 'install activerecord-mysql2-adapter'
 
 # Use unicorn as the web server
 # gem 'unicorn'
